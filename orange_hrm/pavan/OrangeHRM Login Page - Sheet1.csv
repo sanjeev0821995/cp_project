@@ -1,0 +1,16 @@
+Project Name  -  OrangeHRM,,,,,,,,
+Module Name  -  Login Functionality ,,,,,,,,
+Created By  -   Pavan Kumar,,,,,,,,
+created date -  22/11/25,,,,,,,,
+,,,,,,,,
+Test Scenario ID,Test Scenario ,Test Case ID,Test Case Descriptions ,Test Steps,Test Data,Expected Result,Actual Result,Status
+TS_01,Login Functionality ,TC_01,To Validate that logo is visible,Redirect to the web page validate logo is visible,Login Page URL,logo should be visible,As Expected,Pass
+TS_02,,TC_02,To validate the user name edit field should only accepted alphabets ,Redirect to the web page write alphabets in user name edit field,URL - www.orangeHRM.com                Admin,name edit field only accept alphabets ,,Pass
+TS_03,,TC_03,To validate password edit field should numerical and alphabets and special character ,Redirect to the web page write password with alphabets and characters ,URL - www.orangeHRM.com                Admin123,password edit field should only accept alphabets and number  special characters ,,Pass
+TS_04,,TC_04,To validate login button should enable only when successful data entered,Redirect to the web page  enter valid data,URL - www.orangeHRM.com                Admin                 Admin123,login button is enabled only when data is entered,,Pass
+TS_05,,TC_05,To validate user name with characters ,Redirect to the web page ,URL - www.orangeHRM.com                            Admin123,not acceptable ,,Pass
+TS_06,,TC_06,To validate the user name  login page as per required,1. User have tabbed on login button           2.User have tabbed on Register Now button ,URL - www.orangeHRM.com                ,UI should be as per required ,,Pass
+TS_07,,TC_07,verify that all required fields should be marked with asterisk(*) ,1. User have tabbed on login button           2.User have tabbed on Register Now button ,URL - www.orangeHRM.com                ,All Required fields should be marked with asterisk(*),,Fail
+TS_08,,TC_08,"Verify that user should not be able to login with blank Name, Email, Password","1. Tab to Submit button without entering Name, Email, Password",URL - www.orangeHRM.com                e-mail               pass,Below Every field there should front-end validation error should be displayed ,,Pass
+TS_09,,TC_09,verify that User should not be able to login by enter invalid Emai Id,1. enter invalid Email id             2. tab to Submit button,URL - www.orangeHRM.com                e-mail  - @#admin465464                        pass - admin123,error massage should be displayed,,Fail
+TS_10,,TC_10,verify that User should not be able to login with valid Email id and other fields as blank,1. enter valid Email id             2. tab to Submit button,URL - www.orangeHRM.com                e-mail  - @#admin465464                        pass - ,error massage should be displayed,,Fail
