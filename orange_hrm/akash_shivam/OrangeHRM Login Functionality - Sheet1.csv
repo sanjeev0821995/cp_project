@@ -1,0 +1,90 @@
+,,,Project       :  OrangeHRM,,,,,,,
+,,,Module      :  Login Functionality,,,,,,,
+,,,Developer :  Sanjeev Sir,,,,,,,
+,,,Date          :  20/11/2026,,,,,,,
+,,,QA            :  Aakash,,,,,,,
+,,,,,,,,,,
+TS_ID,TS_Description,TC_ID,TC_Description,Steps to reproduce,Test Data,Expected Result,Actual Result,Status,Attachment,Comments
+TS_01,Check the Login functionality,TC_001,Check the Link is redirecting to Login page or not,Step_01: Click on the link,Login Link,It should load the Login page properly,As Expected,Pass,,
+,,TC_002,Check the UI and additional link are working as Expected or not,"Step_01: Click on the link
+Step_02: Click on Additional URL
+Step_03: Check all UI with FRD",Login Link,Additional Link should redirect to dedicated pages and UI should placed as per FRD,As Expected,Pass,,
+,,TC_003,Check the input fields are clickable and editable or not,"Step_01: Click on the link
+Step_02: Click on the Username field
+Step_03: Click on the Password field",Login Link,Fields should be clickable and cursor should be blink ,As Expected,Pass,,
+,,TC_004,Check the username field is showing suggestion or not after clicking on username input field,"Step_01: Click on the link
+Step_02: Click on the Username field",Login Link,It should show a list of suggestion that is used in past as username ,It is showing suggestion that is not used earlier,Fail,Screenshot 2025-11-24 150433.png,
+,,TC_005,Try to Login with empty field,"Step_01: Click on the link
+Step_02: Click on the Login Button",Login Link,Both Username and Password Fields should be highlights in red colour border and Required should be written below in red colour,As Expected,Pass,,
+,,TC_006,Try to login with only Valid username,"Step_01: Click on the link
+Step_02: Click on Username field
+Step_03: Enter Valid Username
+Step_04: Click on the Login Button","Login Link
+
+Username: ""Admin""",It should shows Password field is required,As Expected,Pass,,
+,,TC_007,Try to Login with valid Username and valid Password,"Step_01: Click on the link
+Step_02: Click on Username field
+Step_03: Enter Valid Username
+Step_04: Click on Password field
+Step_05: Enter Valid Password
+Step_06: Click on the Login Button","Login Link
+
+Username: ""Admin""
+Password: ""admin123""",Password should be masked and after clicking on login button it should Loggedin and should redirect to Dashboard and one popup should be shown with OK button on it,As Expected,Pass,,
+,,TC_008,Try to Login with valid credentials As username in  upper case and password As given,"Step_01: Click on the link
+Step_02: Click on Username field
+Step_03: Enter Valid Username in Upper case
+Step_04: Click on Password field
+Step_05: Enter Valid Password as given
+Step_06: Click on the Login Button","Login Link
+
+Username: ""ADMIN""
+Password: ""admin123""","It should not login and new header should be shown with massage ""
+Invalid credentials"" with exclamation mark",It Logged in with upper case Username,Fail,,
+,,TC_009,Try to Login with All valid credentials in upper case,"Step_01: Click on the link
+Step_02: Click on Username field
+Step_03: Enter Valid Username in Upper case
+Step_04: Click on Password field
+Step_05: Enter Valid Password in Upper case
+Step_06: Click on the Login Button","Login Link
+
+Username: ""ADMIN""
+Password: ""ADMIN123""","It should not login and new header should be shown with massage ""
+Invalid credentials"" with exclamation mark",As Expected,Pass,,
+,,TC_010,Try to Login with All valid credentials in lower case,"Step_01: Click on the link
+Step_02: Click on Username field
+Step_03: Enter Valid Username in Lower case
+Step_04: Click on Password field
+Step_05: Enter Valid Password in Lower case
+Step_06: Click on the Login Button","Login Link
+
+Username: ""admin""
+Password: ""admin123""","It should not login and new header should be shown with massage ""
+Invalid credentials"" with exclamation mark",It Logged in with Lower case Username,Fail,Screenshot 2025-11-24 120207.png,
+,,TC_011,Try to Login with valid Username and Invalid Password,"Step_01: Click on the link
+Step_02: Click on Username field
+Step_03: Enter Valid Username
+Step_04: Click on Password field
+Step_05: Enter Invalid Password
+Step_06: Click on the Login Button","Login Link
+
+Username: ""Admin""
+Password: ""admin124""","It should not login and new header should be shown with massage like ""Invalid credentials"" with exclamation mark","It didn't logged in but once in a while it is showing massage i.e ""CSRF token validation failed""",Pass,Screenshot 2025-11-24 133823.png,"Massage Should be different as ""Invalid Credential"""
+,,TC_012,Try to Login with invalid Username and valid Password,"Step_01: Click on the link
+Step_02: Click on Username field
+Step_03: Enter inalid Username
+Step_04: Click on Password field
+Step_05: Enter valid Password
+Step_06: Click on the Login Button","Login Link
+
+Username: ""Admin123""
+Password: ""admin123""","It should not login and new header should be shown with massage like ""Invalid credentials"" with exclamation mark",It is showing a pop-up of Change your password that should not be poped in case of invalid username and valid password,Pass,Screenshot 2025-11-24 135342.png,"Massage Should be different as ""Invalid Credential"" No popup needed of ""Change your password"""
+,,TC_013,Try to Login with invalid Username and invalid Password,"Step_01: Click on the link
+Step_02: Click on Username field
+Step_03: Enter inalid Username
+Step_04: Click on Password field
+Step_05: Enter invalid Password
+Step_06: Click on the Login Button","Login Link
+
+Username: ""Admin123""
+Password: ""admin1234""","It should not login and new header should be shown with massage like ""Invalid credentials"" with exclamation mark",It is showing a pop-up of Change your password that should not be poped in case of invalid username and invalid password,Pass,Screenshot 2025-11-25 141551.png,"Massage Should be different as ""Invalid Credential"" No popup needed of ""Change your password"""
