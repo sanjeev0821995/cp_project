@@ -1,0 +1,59 @@
+Project Name,OrangeHRM,,,,,,,
+Module,Login Page,,,,,,,
+QA,Vivek Sahani,,,,,,,
+Date,25/11/2025,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Test Scenario Id,Test Scenario Description,Test Case Id,Test Case Description,Test step ,Test Data,Expected Result,Actual Result,Status 
+TS_01,Validate the login page from ,TC_01,"Check whether size color And logo is as per 
+Requirement or not ","Step_01: Open the given URL 
+Step_02: Go to login page 
+Step_03: Check UI of the page ",Login Page URL,"size color and foto as per client 
+requirement",As per client requirement ,Pass
+,,TC_02,"Check whether the allingmant and text field as 
+requirement or not ","Step_01: Open the given URL 
+Step_02: Go to login page 
+Step_03: Check UI of the page ",Login Page URL,"Allingment text field as per 
+requirement ",As per client requirement ,`Pass
+,,TC_03,"Check whether the username or password 
+field is editable or not ","Step_01: Open the given URL 
+Step_02: Go to login page 
+Step_03: Click on Username or Password and check",Login Page URL,"Username and Password 
+Field should be ediatble ","Username and Password
+field is editable ",Pass
+,,,,,Login Page URL,,,
+,,TC_04,"Check whether Forgot button is enable or not 
+","Step_01: Open the given URL 
+Step_02: Go to login page 
+Step_03: Click on Username or Password and check",Login Page URL,Forgot button should be enable ,Forgot button is enable ,Pass
+,,TC_05,"Check whether Without enter Username 
+or password user click the login button then it
+ shows error or not.","Step_01: Open the given URL 
+Step_02: Go to login page 
+Step_03: Click on Username or Password and check",Login Page URL,It Should show error message ,It shows error,Pass
+,,TC_06,"Check whether With valid username 
+and invalid password then it shows errorr or not ","Step_01: Open the given URL 
+Step_02: Go to login page 
+Step_03: Enter Valid Username or invalid password
+Step_04: Click on login button",Login Page URL,It Should show error message ,It shows error,Pass
+,,TC_07,"Check whether Invalid username and valid 
+password then it shows error or not ","Step_01: Open the given URL 
+Step_02: Go to login page 
+Step_03: Enter Invalid Username or valid password
+Step_04: Click on login button",Login Page URL,It Should show error message ,It shows error,Pass
+,,TC_08,"Check whether Username contains Alphabets 
+or not.","Step_01: Open the given URL 
+Step_02: Go to login page 
+Step_03: Enter Alphabets in username
+Step_04: Click on login button",Login Page URL,It Should  contains alphabtes,It contains Alphabets,pass
+,,TC_09,Check whether password should masked or not ,"Step_01: Open the given URL 
+Step_02: Go to login page 
+Step_03: click on password 
+Step_04: write password",Login Page URL,Password should masked ,password is masked ,Pass
+,,TC_10,"Check if user enter valid username and password
+then user land the home page or not ","Step_01: Open the given URL 
+Step_02: Go to login page 
+Step_03: Enter valid username and password  
+Step_04: Check user land home page or not ",Login Page URL,User should land home page,user land home page,pass
+,,,,,Login Page URL,,,
+,,,,,Login Page URL,,,
